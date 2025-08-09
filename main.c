@@ -3,33 +3,76 @@
 
 int main()
 {
+    double raio;
+    double area;
+    double peri;
+    double pi;
 
-    int a;
-    int b;
-    int soma;
-    int subtracao;
-    int divisao;
-    int multiplicacao;
-    int resto;
+    printf("informe o valor do raio do circulo:\n");
+    scanf("%lf", &raio);
 
-    printf("informe um numero\n");
-    scanf("%d", &a);
-    printf("informe outro numero\n");
-    scanf("%d", &b);
-    soma = a + b;
-    printf("a soma desses numeros eh:%d\n", soma);
+    pi = 3.14159;
+    area = pi * raio * raio;
 
-    subtracao=a-b;
-    printf("a subtracao desses numeros eh:%d\n", subtracao);
+    printf("o valor da area eh:%2.lf\n", area);
 
-    divisao=a/b;
-    printf("a divisao desses numeros eh:%d\n", divisao);
+    peri = 2 * pi * raio;
 
-    multiplicacao=a*b;
-    printf("a multiplicacao desses numeros eh:%d\n", multiplicacao);
+    printf("o valor do perimetro eh: %2.lf\n", peri);
 
-    resto=a%b;
-    printf("o resto desses numeros eh:%d\n", resto);
+    int idade;
+    int dias;
+    int vividos;
+
+    printf("informe a sua idade:\n");
+    scanf("%d", &idade);
+
+    dias = 365;
+
+    vividos = idade * dias;
+    printf("voce viu essa quantidade de dias:%d\n", vividos);
+
+    int num1;
+    double porc;
+
+    printf("informe um numero:\n");
+    scanf("%d", &num1);
+
+    porc = num1 * 0.04;
+    printf("esse numero mais 4pc eh:%2.lf\n", porc);
+
+
+
+   int nota1;
+   int nota2;
+   int nota3;
+
+   printf("informe a primeira nota\n");
+   scanf("%d", &nota1);
+   printf("informe a segunda nota\n");
+   scanf("%d", &nota2);
+   printf("informe a terceira nota\n");
+   scanf("%d", &nota3);
+
+   nota1 = nota1*0.2;
+   nota2 = nota2*0.3;
+   nota3 = nota3*0.5;
+
+   int media = nota1 + nota2 + nota3;
+
+   printf("a media final eh: %d \n", media);
+
+   int dist;
+   int temp;
+
+   printf("informe a distancia percorrida\n");
+   scanf("%d", &dist);
+
+   printf("informe o tempo:\n");
+   scanf("%d", &temp);
+
+   int vm = dist / temp;
+   printf("a velocidade media eh:%d\n", vm);
 
 
 

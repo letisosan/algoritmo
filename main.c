@@ -1,35 +1,45 @@
 #include <stdio.h>
-#include <math.h>
+#include <stdlib.h>
 
 int main()
 {
+    int n1, n2;
+    printf("informe um numero\n");
+    scanf("%d", &n1);
+    printf("informe outro numero\n");
+    scanf("%d", &n2);
 
-   double num, quadrado, cubo;
+    if(n1==n2){
+        printf("os numeros sao iguais");
+    }
+    else {
+        printf("os numeros nao sao iguais\n");
+    }
 
-   printf("informe um numero:\n");
-   scanf("%lf", &num);
+    int val1, val2;
+        printf("informe um numero\n");
+        scanf("%d", &val1);
+        printf("informe outro numero\n");
+        scanf("%d", &val2);
 
-   quadrado = pow (num, 2);
-   cubo = pow (num, 3);
+        if(val1+val2>10){
+            printf("eh maior que 10");
+        }
+        else{
+            printf("nao eh maior que 10\n");
+        }
 
-   printf("o valor do cubo eh: %.2lf\n", cubo);
-   printf("o valor do quadrado eh: %.2lf\n", quadrado);
+        int num1, num2;
+        printf("informe um numero\n");
+        scanf("%d", &num1);
+        printf("informe outro numero\n");
+        scanf("%d", &num2);
 
-
-   double num1, num2;
-   printf("informe um numero:\n");
-   scanf("%lf", &num1);
-   printf("informe outro numero:\n");
-   scanf("%lf", &num2);
-
-   double aux, raiz;
-
-   aux = num1 * num2;
-
-   raiz = sqrt (aux);
-
-   printf("a raiz quadrada da multiplicação desses numeros eh:%.2lf\n", raiz);
-
-   return 0;
-
+        if(num1>num2){
+            printf("entao mostre %d %d", num1, num2);
+        }
+        else{
+            printf("entao mostre %d %d", num2, num1);
+        }
+    return 0;
 }

@@ -3,43 +3,47 @@
 
 int main()
 {
-    int n1, n2;
-    printf("informe um numero\n");
+
+     int n1;
+    int n2;
+
+    printf("informe um numero:\n");
     scanf("%d", &n1);
-    printf("informe outro numero\n");
+    printf("informe outro numero:\n");
     scanf("%d", &n2);
 
-    if(n1==n2){
-        printf("os numeros sao iguais");
+
+    if (n1%2==0 && n2%2==0) {
+        printf("os numeros sao pares");
+    }
+    else if (n1%2==0 || n2%2==0) {
+        printf("um eh par");
+            }
+    else {
+        printf("nao sao pares\n");
+    }
+
+
+    double altura, peso;
+    char sexo;
+
+    printf("informe a sua altura em metros:\n");
+    scanf("%lf", &altura);
+    printf("informe o seu sexo:\n");
+    scanf(" %c", &sexo);
+
+    if(sexo == 'm' || sexo == 'M'){
+        peso = (72.7 * altura) -58;
+        printf("peso ideal: %.2lf\n", peso);
+    }
+    else if(sexo == 'f' || sexo == 'F'){
+        peso = (62.1 * altura) - 44.7;
+        printf("peso ideal: %.2lf\n");
     }
     else {
-        printf("os numeros nao sao iguais\n");
+        printf("opcao invalida!!!!");
     }
 
-    int val1, val2;
-        printf("informe um numero\n");
-        scanf("%d", &val1);
-        printf("informe outro numero\n");
-        scanf("%d", &val2);
-
-        if(val1+val2>10){
-            printf("eh maior que 10");
-        }
-        else{
-            printf("nao eh maior que 10\n");
-        }
-
-        int num1, num2;
-        printf("informe um numero\n");
-        scanf("%d", &num1);
-        printf("informe outro numero\n");
-        scanf("%d", &num2);
-
-        if(num1>num2){
-            printf("entao mostre %d %d", num1, num2);
-        }
-        else{
-            printf("entao mostre %d %d", num2, num1);
-        }
     return 0;
 }
+

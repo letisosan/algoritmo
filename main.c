@@ -1,34 +1,30 @@
 #include <stdio.h>
-#include <math.h>
+#include <stdlib.h>
 
 int main()
 {
 
-    char conceito;
-    printf("informe o conceito do aluno:\n");
-    scanf("%c", &conceito);
 
-    switch (conceito) {
-        case 'A': {
-        printf("excelente\n");
-        break;
-        }
-        case 'B': {
-        printf("bom\n");
-        break;
-        }
-        case 'C': {
-        printf("regular\n");
-        break;
-        }
-        case 'D': {
-        printf("reprovado");
-        break;
-        }
-        default: {
-        printf("opcao invalida");
-        }
-    }
+   int cont = 1, num, maior, menor;
+   printf("informe o primeiro numero:\n");
+   scanf("%d", &num);
+   maior = num;
+   menor = num;
 
-    return 0;
-}
+   while (cont <= 9) {
+        printf("informe %d numero\n", cont);
+        scanf("%d", &num);
+   if (num > maior) {
+        maior = num;
+   }
+   else if (num < menor) {
+        menor = num;
+   }
+    cont++;
+   }
+
+   printf("o maior eh: %d\n", maior);
+   printf("o menor eh: %d\n", menor);
+
+   return 0;
+   }
